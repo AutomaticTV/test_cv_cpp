@@ -73,23 +73,9 @@ In the field (0, 0) is the center of the field. In the image the (0, 0) is the t
 ### Final comments
 * Upload solution code in a private repository together with the resulting text file and send us the link. We will value both the solution and quality of the code made.
 
-## 2. Find the bug
-### 1. Code review & bug hunting
+## 2. Code review & bug hunting
 
-Please analyze the following code included in `Task2/main.cxx` file as if you were doing code review for a producer/consumer queue. Note that it is simplified to fit 100 lines of code. As a part of this task, please share with us your findings and possible improvements (with an explanation why they should be done).
+Please analyze the following code included in `Task2/main.cxx` file as if you were doing code review for a producer/consumer queue. Note that it is simplified to fit 100 lines of code.
+As a part of this task, please share with us your findings and possible improvements (with an explanation why they should be done).
 
 This code may contain a bug causing it to deadlock. Can you find and fix the bug? If yes, can you explain why the bug happened? If not, please describe us the steps you took to verify this.
-
-
-### 2. Propose an architecture
-
-We would like you to discuss some architectural ideas with us.
-
-Imagine that we have a both synchronous and asynchronous control protocols to manage the behavior of external devices (like cameras). We want to maintain the non-blocking GUI behavior when operating these devices.
-
-* What would be your preferred solution of choice for this kind of scenario?
-* Do you think an `executor` concept (similar to what you implemented in your `ddk` library) would be applicable? Why or why not?
-* Would your solution change based on the compiler used? What if you had to target MSVC2017?
-* Would your solution change based on seniority of other member of your team?
-* Could you provide a draft of such architecture?
-
